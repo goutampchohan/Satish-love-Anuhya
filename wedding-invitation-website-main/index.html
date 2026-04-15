@@ -560,72 +560,66 @@
 
         <!-- RSVP Section -->
         <section class="py-24 bg-royal-900 relative overflow-hidden">
+
             <!-- Decorative bg elements -->
             <div class="absolute top-0 right-0 w-64 h-64 opacity-5 pointer-events-none">
                 <i class="fas fa-mandala text-[20rem] text-gold-500 animate-spin-slow"></i>
             </div>
 
             <div class="container mx-auto px-4 relative z-10">
+
                 <div
                     class="max-w-xl mx-auto bg-royal-800 p-8 md:p-12 rounded-lg border border-gold-500/30 shadow-2xl rsvp-container">
+
                     <div class="text-center mb-8">
+
                         <i class="fas fa-envelope-open-text text-5xl text-gold-500 mb-4"></i>
-                        <h2 class="font-serif text-4xl text-cream mb-2">RSVP</h2>
-                        <p class="text-gold-200">Please confirm your presence by November 1st</p>
+
+                        <h2 class="font-serif text-4xl text-cream mb-2">
+                            And Now...
+                        </h2>
+
+                        <p class="text-gold-200">
+                            Join us in celebrating our love
+                        </p>
+
                     </div>
 
-                    <form id="rsvpForm" class="space-y-6">
-                        <div>
-                            <label class="block text-gold-400 text-sm uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text"
-                                class="w-full bg-royal-900 border-b border-gold-500 text-cream px-4 py-3 focus:outline-none focus:border-gold-300 transition-colors"
-                                placeholder="Enter your name" required>
-                        </div>
 
-                        <div>
-                            <label class="block text-gold-400 text-sm uppercase tracking-wider mb-2">Number of
-                                Guests</label>
-                            <select
-                                class="w-full bg-royal-900 border-b border-gold-500 text-cream px-4 py-3 focus:outline-none cursor-pointer">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
+                    <!-- RSVP BUTTON -->
+                    <button onclick="openRSVP()"
+                        class="w-full bg-gold-500 text-royal-900 font-bold font-serif py-4 hover:bg-cream transition-all duration-300 mt-4">
 
-                        <div>
-                            <label class="block text-gold-400 text-sm uppercase tracking-wider mb-2">Attending?</label>
-                            <div class="flex gap-4 mt-2">
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="attendance"
-                                        class="form-radio text-gold-500 focus:ring-gold-500 bg-royal-900 border-gold-500"
-                                        checked>
-                                    <span class="ml-2 text-cream">Joyfully Accepts</span>
-                                </label>
-                                <label class="flex items-center cursor-pointer">
-                                    <input type="radio" name="attendance"
-                                        class="form-radio text-gold-500 focus:ring-gold-500 bg-royal-900 border-gold-500">
-                                    <span class="ml-2 text-cream">Regretfully Declines</span>
-                                </label>
-                            </div>
-                        </div>
+                        RSVP NOW
 
-                        <button type="submit"
-                            class="w-full bg-gold-500 text-royal-900 font-bold font-serif py-4 hover:bg-cream transition-colors duration-300 mt-4">
-                            SEND CONFIRMATION
-                        </button>
-                    </form>
+                    </button>
 
-                    <!-- Success Message (Hidden by default) -->
-                    <div id="rsvpSuccess" class="hidden text-center py-10">
-                        <i class="fas fa-check-circle text-6xl text-green-500 mb-4 scale-0 success-icon"></i>
-                        <h3 class="font-serif text-3xl text-cream mb-2">Thank You!</h3>
-                        <p class="text-gold-200">Your response has been recorded.</p>
-                        <p class="text-sm text-gray-400 mt-4">We look forward to seeing you.</p>
-                    </div>
                 </div>
+
             </div>
+
+        </section>
+
+
+        <script>
+
+            function openRSVP() {
+
+                window.open("https://docs.google.com/forms/d/e/1FAIpQLSf42vM-3BDoj024G5N6XJCXqsaHjMVujHB3ZVOXwos-ZdA7eA/viewform", "_blank");
+
+            }
+
+        </script>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="rsvpSuccess" class="hidden text-center py-10">
+            <i class="fas fa-check-circle text-6xl text-green-500 mb-4 scale-0 success-icon"></i>
+            <h3 class="font-serif text-3xl text-cream mb-2">Thank You!</h3>
+            <p class="text-gold-200">Your response has been recorded.</p>
+            <p class="text-sm text-gray-400 mt-4">We look forward to seeing you.</p>
+        </div>
+        </div>
+        </div>
         </section>
 
         <footer class="bg-black text-center py-10 border-t border-royal-800">
